@@ -28,7 +28,7 @@ body{
 }
 
 .geek-navlink{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 20px;
 }
 
@@ -150,6 +150,68 @@ body{
     padding-top: 10px;
 }
 
+.geek-sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, #0B0765 0%, #09099D 100%), #0B0765;
+    overflow-x: hidden;
+    padding-top: 90px;
+    transition: 0.5s;
+}
+
+.geek-sidenav  a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.geek-sidenav .geek-btnclose{
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    font-size: 36px;
+}
+
+.geek-openslide{
+    display: none;
+}
+
+.geek-down{
+    padding-top: 90%;
+}
+
+.geek-down > a{
+    display: inline;
+    padding: 0 0 0 30px;
+}
+
+.geek-down > p{
+    padding: 0 0 0 30px;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width:1000px){
+    .geek-navmid, .geek-navlink  > a{
+        display: none;
+    }
+
+    .geek-openslide{
+        display: flex;
+    }
+
+}
+
 @media only screen and (max-width:600px){
     .geek-body{
         background-image: url(/img/image\ 3.png);
@@ -254,12 +316,16 @@ body{
         display: flex;
     }
 
-    .geek-navmid, .geek-navlink{
+    .geek-navmid, .geek-navlink  > a{
         display: none;
     }
 
     .btn3{
         display: none;
+    }
+
+    .geek-openslide{
+        display: flex;
     }
 
     

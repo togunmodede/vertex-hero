@@ -24,6 +24,33 @@
                 <a href=""><img src="/img/Icon-instagram.png" alt=""></a>&nbsp;&nbsp;
                 <a href=""><img src="/img/Icon-twitter.png" alt=""></a>&nbsp;&nbsp;
                 <a href=""><img src="/img/Icon-facebook.png" alt=""></a>&nbsp;&nbsp;
+
+                <span class="geek-openslide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                        </svg>
+                    </a>
+                </span>
+                <div id="geek-sidemenu" class="geek-sidenav">
+                    <div class="geek-up">
+                        <a href="#"class="geek-btnclose" onclick="closeSlideMenu()">&times;</a>
+                        <a href="">Home</a>
+                        <a href="">Why Vertex?</a>
+                        <a href="">Case Studies</a>
+                        <a href="">Work With Us</a>
+
+                    </div>
+                    <div class="geek-down">
+                        <a href=""><img src="/img/Icon-instagram2.png" alt=""></a>
+                        <a href=""><img src="/img/Icon-twitter2.png" alt=""></a>&nbsp;
+                        <a href=""><img src="/img/Icon-facebook2.png" alt=""></a><br>
+                        <p>Copyright &#169; 2020</p>
+                        <p>Vertex Software Corporation</p>
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -56,5 +83,15 @@
             <a href=""><img src="/img/Loomis Logo.png" alt="" id="f"></a>
         </div>
     </div>
+
+    <script>
+        function openSlideMenu(){
+            document.getElementById('geek-sidemenu').style.width = '300px';
+        }
+
+        function closeSlideMenu(){
+            document.getElementById('geek-sidemenu').style.width = '0px';
+        }
+    </script>
 </body>
 </html>
