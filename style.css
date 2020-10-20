@@ -34,10 +34,12 @@ body{
 
 .geek-navmid > ul > a{
     text-decoration: none;
+    padding: 0 15px 15px 0;
 }
 
 .geek-navlink > a{
     text-decoration: none;
+    padding: 0 10px 10px
 }
 
 .geek-body{
