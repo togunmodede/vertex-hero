@@ -1,3 +1,3 @@
 # vertex-hero
 
- https://tun-dev.github.io/vertex-hero/
+ https://geektutor.github.io/vertex-hero/
