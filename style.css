@@ -4,20 +4,24 @@ body{
     font-family: Graphik;
 }
 
+html{
+    height: 100%;
+}
+
 @font-face{
     font-family: "Graphik";
-    src: url("font/Graphik-Regular.ttf");
+    src: url("font/GraphikMedium.ttf");
 }
 
 .geek-nav{
-    height: 90px;
+    height: 70px;
     width: 100%;
     /* border: 2px solid black; */
-    margin: 0 auto;
+    margin: 0 0 10px 0;
 }
 
 .geek-navinner{
-    height: 90px;
+    height: 50px;
     width: 90%;
     /* border: 2px solid red; */
     margin: 0 auto;
@@ -40,24 +44,24 @@ body{
 
 .geek-navmid > ul > a{
     text-decoration: none;
-    padding: 0 15px 15px 0;
+    padding: 0 25px 25px 0;
 }
 
 .geek-navlink > a{
     text-decoration: none;
-    padding: 0 10px 10px
+    padding: 0 10px 10px;
 }
 
 .geek-body{
     background: url(img/image-2.png);
     background-size: cover;
     width: 100%;
-    height: 800px;
+    height: 720px;
 }
 
 .geek-word1{
     width: 500px;
-    padding-top: 150px;
+    padding-top: 100px;
     margin-left: 17%;
 }
 
@@ -119,10 +123,11 @@ body{
 
 .geek-footer{
     width: 90%;
-    height: 175px;
+    height: 130px;
     /* border: 2px solid black; */
     margin: 0 auto;
     display: flex;
+    position: relative;
 }
 
 .geek-word2{
